@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: rgb(120, 2, 2);
+}
+
+#header #header-img {
+  width: 100px;
+  border-radius: 10px;
+}
+#header #nav-bar ul {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+#header #nav-bar ul li {
+  list-style: none;
+  font-size: large;
+}
+#header #nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+}
+#header #nav-bar ul li a:hover {
+  border-bottom: 1px solid white;
+  transition-duration: 600ms;
+  position: relative;
+  top: 3px;
+  /* color: brown; */
+  /* background-color: white; */
+}
+#about {
+  padding: 10px 20px 0;
+  display: flex;
+  gap: 76px;
+  background-color: rgb(241, 232, 234);
+  justify-content: center;
+}
+.bold {
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  font-size: 25px;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#about .about-us > p {
+  margin-top: 12px;
+  line-height: 20px;
+  font-family: sans-serif;
+  width: 190px;
+}
+.connect {
+  /* margin: 20px 34% ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.connect #video {
+  width: 100vw;
+  height: 400px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#best-sell {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(120, 2, 2);
+  color: whitesmoke;
+}
+#menu {
+  background: rgb(236, 205, 205);
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  justify-items: center;
+  padding-top: 10px;
+}
+#menu div {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#menu div > img {
+  width: 300px;
+  border: 1px solid rgb(103, 3, 3);
+  border-radius: 5px;
+}
+.cap {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  color: rgb(48, 1, 1);
+  margin-bottom: 6px;
+}
+#menu div > p {
+  color: rgb(55, 3, 118);
+  margin-bottom: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn {
+  background: rgb(151, 106, 3);
+  color: rgb(227, 219, 219);
+  width: 132px;
+}
+.btn input {
+  width: 40px;
+  margin-left: 2px;
+  color: rgb(72, 16, 16);
+}
+.btn:hover {
+  background: rgb(120, 2, 2);
+  cursor: pointer;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 180px;
+  padding: 20px;
+  background-color: rgb(232, 203, 203);
+}
+#form label {
+  width: 175px;
+  font-size: 1.2rem;
+}
+#form input {
+  width: 175px;
+  height: 25px;
+  background-color: rgb(204, 168, 168);
+  /* color:white */
+}
+#contact-us {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(226, 228, 226);
+  color: rgb(73, 79, 47);
+}
+#contact-us div span {
+  display: block;
+  text-align: center;
+  margin-bottom: 18px;
+  margin-top: 15px;
+}
+
+#submit {
+  margin-top: 10px;
+}
+#submit:hover {
+  background: rgb(208, 153, 153);
+  cursor: pointer;
+}
+#submit:active {
+  width: 160px;
+}
+#contact-us div span a {
+  text-decoration: none;
+  color: cadetblue;
+}
+#contact-us div span :hover {
+  border-bottom: 1px solid black;
+  transition-duration: 200ms;
+}
+@media screen and (max-width: 600px) {
+  #header #nav-bar ul {
+    width: 500px;
+    display: block;
+    text-align: center;
+    /* margin-left:50px; */
+  }
+
+  #menu {
+    background: rgb(236, 205, 205);
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(1, 1fr);
+    justify-items: center;
+    padding-top: 10px;
+  }
+
+  #header #header-img {
+    margin-left: 200px;
+  }
+
+  #about {
+    padding: 10px 20px 0;
+    display: flex;
+    /* gap: 18px; */
+    background-color: rgb(241, 232, 234);
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 10px 20px 0;
+    display: flex;
+    gap: 36px;
+    background-color: rgb(241, 232, 234);
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  #about {
+    padding: 10px 20px 0;
+    display: block;
+    /* gap: 18px; */
+    background-color: rgb(241, 232, 234);
+    justify-content: center;
+  }
+  #about .about-us > p {
+    width: 100%;
+  }
+}
